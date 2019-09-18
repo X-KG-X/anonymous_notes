@@ -1,0 +1,9 @@
+   <div class="pre-scrollable">
+       <div class=" pt-2 pb-5 mt-3 border" *ngFor=" let note of notes " >
+            <p class="float-right text-muted">Noted on: {{note.createdAt| date:'MMM,dd,yyyy,  h:mm:ss a'}}</p>
+            <p>
+            {{note.note}}
+            </p>
+        </div>
+
+   </div>
